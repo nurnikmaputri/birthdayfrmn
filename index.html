@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Firman 🎂</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         BACKGROUND BINTANG
+    ====================================== -->
+
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+
+
+    <!-- =====================================
+         BALON
+    ====================================== -->
+
+    <div class="balloon balloon1">🎈</div>
+    <div class="balloon balloon2">🎈</div>
+    <div class="balloon balloon3">🎈</div>
+    <div class="balloon balloon4">🎈</div>
+
+
+    <!-- =====================================
+         HALAMAN 1 - OPENING
+    ====================================== -->
+
+    <section id="opening" class="screen active">
+
+        <div class="gift">
+            🎁
+        </div>
+
+        <p class="small-text">
+            Ada sesuatu untukmu...
+        </p>
+
+        <h1>
+            Hey, <span>Firman</span>!
+        </h1>
+
+        <p class="subtitle">
+            Jangan buru-buru pergi ya 👀
+        </p>
+
+        <button onclick="startSurprise()">
+            Buka Surprise ✨
+        </button>
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 2 - BIRTHDAY
+    ====================================== -->
+
+    <section id="birthday" class="screen">
+
+        <div class="content">
+
+            <p class="birthday-small">
+                TODAY IS YOUR SPECIAL DAY ✨
+            </p>
+
+
+            <h2>
+                HAPPY<br>
+                <span>BIRTHDAY</span>
+            </h2>
+
+
+            <h3>
+                FIRMAN ARYAWAN ANANDA PUTRA
+            </h3>
+
+
+            <!-- KUE -->
+            <div class="cake-container">
+
+                <!-- API LILIN -->
+                <div
+                    class="flame"
+                    onclick="blowCandle()">
+                    🔥
+                </div>
+
+                <!-- LILIN -->
+                <div class="candle"></div>
+
+
+                <!-- KUE -->
+                <div class="cake">
+
+                    <div class="cream"></div>
+
+                    <div class="cake-top"></div>
+
+                    <div class="cake-body"></div>
+
+                </div>
+
+            </div>
+
+
+            <p id="candleText">
+                Klik lilinnya untuk membuat permintaan 🎂
+            </p>
+
+
+            <!-- TOMBOL SURAT -->
+            <button onclick="showLetter()">
+                Ada Surat Untukmu 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 3 - SURAT
+    ====================================== -->
+
+    <section id="letter" class="screen">
+
+        <div class="letter-box">
+
+            <div class="envelope">
+                💌
+            </div>
+
+
+            <h2>
+                Untuk Firman...
+            </h2>
+
+
+            <!--
+                JavaScript akan memasukkan
+                tulisan ke bagian ini
+            -->
+
+            <p id="typingText"></p>
+
+
+            <button onclick="showFinal()">
+                Satu hal lagi... ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 4 - FINAL
+    ====================================== -->
+
+    <section id="final" class="screen">
+
+        <div class="final-content">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+
+            <h2>
+                FIRMAN ARYAWAN<br>
+                ANANDA PUTRA
+            </h2>
+
+
+            <p>
+                Semoga di umur yang baru ini,
+                semua hal baik datang satu per satu.
+
+                <br><br>
+
+                Semoga selalu diberikan kesehatan,
+                kebahagiaan, kelancaran,
+                dan alasan untuk terus tersenyum. ✨
+            </p>
+
+
+            <div class="final-message">
+
+                🎂 Make a wish.
+
+                <br>
+
+                ✨ Make it happen.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         TEMPAT CONFETTI
+    ====================================== -->
+
+    <div id="confetti"></div>
+
+
+
+    <!-- =====================================
+         MENGHUBUNGKAN JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
